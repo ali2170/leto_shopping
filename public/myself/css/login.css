@@ -1,0 +1,18 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+.mt_150{
+    margin-top: 150px;
+}
+
+/*.panel_header{*/
+    /*padding: 10px 15px;*/
+    /*color: #fff;*/
+    /*background-color: #337ab7;*/
+    /*bottom-color:1px solid transparent;*/
+/*}*/
+.mr_50{
+    margin-right: 50px;
+}
