@@ -1,0 +1,33 @@
+.nav{
+    width: 100%;
+    padding: 10px;
+}
+.nav li{
+    float:left;
+    width: 33.33%;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.product{
+    padding: 10px;
+}
+.product .item{
+    width: 48%;
+    border:1px solid #cccccc;
+    text-align: center;
+    float: left;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.product .item:nth-child(odd){
+    margin-right: 4%;
+}
+.product .item p span:first-child{
+    color:red;
+}
+.product .item p span:last-child{
+    text-decoration: line-through;
+}
