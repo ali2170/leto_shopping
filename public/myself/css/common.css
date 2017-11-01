@@ -6,6 +6,11 @@ body{
     margin: 0;
     padding: 0;
 }
+.main .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
 ul{
     list-style: none;
 }
