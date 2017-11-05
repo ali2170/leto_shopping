@@ -100,3 +100,10 @@ img{
     color: #fff;
 }
 
+.nav{
+    width: 100%;
+}
+.nav li{
+    float:left;
+
+}

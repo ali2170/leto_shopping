@@ -32,6 +32,31 @@ $(function () {
     }
 
     render();
+    $('tbody').on("click",".btn",function () {
+        $("#userModal").modal('show');
+        var id = $(this).parent().data("id");
+        var isDelete = $(this).parent().data("isDelete");
+        isDelete= isDelete===1?0:1;
+        console.log(id);
+        console.log(isDelete);
 
+    $('.btn_confirm').off().on("click",function () {
+        // console.log("哈哈")
 
+        $.ajax({
+            type:"post",
+            url:"/user/updateUser",
+            data:{
+                id:id,
+                isDelete:isDelete
+            },
+            success:function (data) {
+                if (data.success){
+                    render();
+                    $("#userModal").modal('hide');
+                }
+            }
+        })
+    })
+    });
 });

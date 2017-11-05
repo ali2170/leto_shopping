@@ -27,17 +27,16 @@
     background-color: #cccccc;
     padding:0 10px;
 }
-.main .nav li{
+.main .nav  a{
     float: left;
     width: 25%;
     text-align: center;
     height: 30px;
     line-height:30px;
-}
-.main .nav li a{
     font-size: 12px;
 }
-.main .nav li a.now{
+
+.main .nav  a.now{
     color: darkorange;
 }
 .product{

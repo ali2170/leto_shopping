@@ -52,17 +52,17 @@ $(".main .top button").on("click",function () {
 
 $(".nav a[data-type]").on("click",function () {
     var $this = $(this);
-    var $span = $this.find('span');
+    var $span = $(this).find("span");
     // console.log(11);
     // $(this).find("span").toggleClass("fa-angle-down").toggleClass("fa-angle-up");
     // $(this).addClass("now").siblings().removeClass("now")
     if ($this.hasClass("now")){
         $span.toggleClass("fa-angle-down").toggleClass("fa-angle-up");
 
-    }else {
-        $('.nav span').removeClass("fa-angle-up").addClass("fa-angle-down");
-        $('.nav a').removeClass('now');
-        $this.addClass("now").siblings().removeClass("now");
+    }else{
+        $(this).addClass("now").siblings().removeClass("now");
+        $(".nav span").removeClass("fa-angle-up").addClass("fa-angle-down");
+        // $('.nav span').removeClass("fa-angle-up").addClass("fa-angle-down");
     }
     var type =$this.data("type");
     var value = $span.hasClass('fa-angle-up')?1:2;

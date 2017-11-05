@@ -83,15 +83,15 @@ $(".lt_history").on("click", ".icon_empty", function () {
 //4. 把这个数组重新存储到缓存中
 //5. 重新渲染
 $(".lt_history").on("click", ".fa-close", function () {
-  var that = $(this) ;
-  
-  var btnArray = ["是", "否"];
-  mui.confirm("你确定要删除这条记录吗","警告", btnArray, function (data) {
-    console.log(this);
 
-    if(data.index === 0){
+  var btnArray = ["是", "否"];
+  var $this = $(this);
+
+  mui.confirm("你确定要删除这条记录吗","警告", btnArray, function (data) {
+
+    if(data.index == 0){
       var arr = getHistory();
-      var index = that.data("index");
+      var index = $this.data("index");
       //数组如何删除某一项  push unshift pop shift  slice(原数组不变)  splice()
       arr.splice(index, 1);
       //stringify ：字符串化  simple simplify:

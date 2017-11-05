@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
     <title>搜索页面</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="lib/mui/css/mui.css">
@@ -74,7 +77,7 @@
         <ul class="content mui-clearfix">
             {{each arr v i}}
             <li class="nab">
-            <a  href="searchList.html?" class="mui-pull-left">{{v}}</a>
+            <a  href="searchList.html?key={{v}}" class="mui-pull-left">{{v}}</a>
                 <span data-index="{{i}}" class="mui-pull-right fa fa-close"></span>
             </li>
             {{/each}}
